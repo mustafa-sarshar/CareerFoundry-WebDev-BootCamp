@@ -1,2 +1,2 @@
-# Web-Development BootCamp @ CareerFoundry
+# Web-Development BootCamp @CareerFoundry
  
