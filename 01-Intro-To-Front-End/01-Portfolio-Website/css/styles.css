@@ -24,7 +24,7 @@
 	--color-button__bg: #006400;
 	--color-button__text: #90ee90;
 
-	--color-table-th--highlighted: #80808033;
+	--color-table__th--highlighted: #80808033;
 
 	--color-border: #80808066;
 
@@ -37,6 +37,11 @@
 	--color-contact-form__element-border: #006400;
 
 	--color-text--shadowed: #000000;
+
+	--size-header__height--v1: 91px;	/* 91px -> 133px -> 212px */
+	--size-header__height--v2: 133px;
+	--size-header__height--v3: 212px;
+	--size-footer__height: 73px;	/* 73px */
 }
 
 /* ----------------- U N I V E R S A L S ----------------- */
@@ -102,7 +107,7 @@ hr {
 	top: 0;
 	display: flex;
 	width: 100%;
-	height: fit-content;
+	height: var(--size-header__height--v1);
 	border-bottom: 1px solid var(--color-border);
 	background-color: var(--color-header-footer__bg);
 	padding: 10px 20px;
@@ -155,6 +160,7 @@ a,
 	.page-header {
 		display: block;
 		text-align: center;
+		height: var(--size-header__height--v2);
 	}
 	.navigation-list {
 		text-align: center;
@@ -167,6 +173,9 @@ a,
 }
 
 @media all and (max-width: 440px) {
+	.page-header {
+		height: var(--size-header__height--v3);
+	}
 	.navigation-list {
 		display: flex;
 		flex-direction: column;
@@ -194,12 +203,17 @@ a,
 	text-align: center;
 	border-top: 1px solid var(--color-border);
 	width: 100%;
+	height: var(--size-footer__height);
 	background-color: var(--color-header-footer__bg);
 	z-index: 1000;
 }
 
+.page-footer p {
+	margin: 0 auto;
+}
+
 .social-media {
-	margin: 10px;
+	margin: 0 10px 10px 10px;
 }
 
 /* --- P A G E		M A I N --- */
@@ -227,13 +241,13 @@ a,
 
 @media all and (max-width: 630px) {
 	.page-main {
-		padding-top: 120px;
+		padding-top: var(--size-header__height--v2);
 	}
 }
 
 @media all and (max-width: 440px) {
 	.page-main {
-		padding-top: 220px;
+		padding-top: var(--size-header__height--v3);
 	}
 }
 
@@ -271,7 +285,7 @@ a,
 	transition: all .5s ease;
 }
 
-.profile__mycodes {
+.profile__myworks {
 	display: block;
 	clear: both;
 	width: fit-content;
@@ -280,7 +294,7 @@ a,
 	color: var(--color-hyperlinks--normal);
 	transition: all .5s linear;
 }
-.profile__mycodes:hover {
+.profile__myworks:hover {
 	color: black;
 	border-top: none;
 	transform: scaleX(1.1);
@@ -494,14 +508,14 @@ a,
 
 .skills-table th[scope="col"] {
 	text-align: center;
-	background-color: var(--color-table-th--highlighted);
+	background-color: var(--color-table__th--highlighted);
 	padding: 0 2ch;
 	border-bottom: 1px solid var(--color-border);
 }
 
 .skills-table th[scope="row"] {
 	text-align: left;
-	background-color: var(--color-table-th--highlighted);
+	background-color: var(--color-table__th--highlighted);
 	padding: 0 4ch;
 }
 
