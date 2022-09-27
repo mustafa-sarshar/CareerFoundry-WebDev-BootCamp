@@ -368,7 +368,7 @@ a,
 }
 
 .contact-info__address address,
-.contact-info__info article {
+.contact-info__info div {
 	padding-left: 2ch;
 }
 

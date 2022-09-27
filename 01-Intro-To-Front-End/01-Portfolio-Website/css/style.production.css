@@ -10,8 +10,6 @@
 		i.e Block__Element--Modifier
 */
 
-/* --------------------- C O L O R S --------------------- */
-
 /* ----------------- U N I V E R S A L S ----------------- */
 
 * {
@@ -95,9 +93,7 @@ hr {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
+	height: 91px;
 	border-bottom: 1px solid #80808066;
 	background-color: #e0e0e0;
 	padding: 10px 20px;
@@ -157,6 +153,7 @@ a {
 	.page-header {
 		display: block;
 		text-align: center;
+		height: 133px;
 	}
 	.navigation-list {
 		text-align: center;
@@ -169,6 +166,9 @@ a {
 }
 
 @media all and (max-width: 440px) {
+	.page-header {
+		height: 212px;
+	}
 	.navigation-list {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -208,12 +208,17 @@ a {
 	text-align: center;
 	border-top: 1px solid #80808066;
 	width: 100%;
+	height: 73px;
 	background-color: #e0e0e0;
 	z-index: 1000;
 }
 
+.page-footer p {
+	margin: 0 auto;
+}
+
 .social-media {
-	margin: 10px;
+	margin: 0 10px 10px 10px;
 }
 
 /* --- P A G E		M A I N --- */
@@ -243,13 +248,13 @@ a {
 
 @media all and (max-width: 630px) {
 	.page-main {
-		padding-top: 120px;
+		padding-top: 133px;
 	}
 }
 
 @media all and (max-width: 440px) {
 	.page-main {
-		padding-top: 220px;
+		padding-top: 212px;
 	}
 }
 
@@ -292,7 +297,7 @@ a {
 	transition: all .5s ease;
 }
 
-.profile__mycodes {
+.profile__myworks {
 	display: block;
 	clear: both;
 	width: -webkit-fit-content;
@@ -305,7 +310,7 @@ a {
 	-o-transition: all .5s linear;
 	transition: all .5s linear;
 }
-.profile__mycodes:hover {
+.profile__myworks:hover {
 	color: black;
 	border-top: none;
 	-webkit-transform: scaleX(1.1);
@@ -425,7 +430,7 @@ a {
 }
 
 .contact-info__address address,
-.contact-info__info article {
+.contact-info__info div {
 	padding-left: 2ch;
 }
 
