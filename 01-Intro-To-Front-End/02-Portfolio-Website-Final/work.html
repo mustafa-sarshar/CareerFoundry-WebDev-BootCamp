@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- based on realfavicongenerator.net recommendations START -->
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_package_v0.16//site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon_package_v0.16//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- END -->
+    <!-- Not needed any more
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon_package_v0.16//favicon-32x32.png">
+	-->
+    <!-- CSS Reset / Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+    <title>Mustafa Sarshar's Works</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <!-- Add logo here -->
+        <img src="./img/mussar_logo.ico"
+            alt="Personal logo of Mustafa Sarshar, written as muSSar, which is an abbreviation for his first and last name"
+            width="200" height="70" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="./index.html" target="_self" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="./about.html" target="_self" role="menuitem" class="navigation-list__item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="./work.html" target="_self" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">My Works</a>
+                </li>
+                <li role="presentation">
+                    <a href="./contact.html" target="_self" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main class="page-main">
+        <section class="page-main__works">
+            <h1 class="page-main__title"><span class="page-main__title--italic">Mustafa Sarshar's</span> Works 💪</h1>
+            <div class="project-list">
+                <!-- Grid items will live here -->
+                <div class="project-list__item">
+                    <h2>SmartGait</h2>
+                    <p>
+                        The goal of this project is to train multiple Artificial Intelligence (AI) models that can
+                        analyze the data gained from
+                        Inertial Measurement Units (IMU) to detect/estimate different gait
+                        phases (i.e. Foot-Contact, Foot-Off, Mid-Swing) while walking over-ground as well as on the
+                        treadmill. The first phase of this project is already completed. Three separate regression
+                        models were trained using LSTM algorithm. The
+                        results proved the strong potential of these models for above mentioned purposes.
+                    </p>
+                    <p>
+                        The next phase of the project will get started very soon and the results will be publicly
+                        announced.
+                    </p>
+                    <a href="https://github.com/mustafa-sarshar/SmartGait" target="_blank" rel="noopener noreferrer">See
+                        the project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Easy ML Easy DL</h2>
+                    <p>
+                        Artificial Intelligence (AI) is a field where the knowledge of both statistics and programming
+                        is required.
+                        However, most of scientists have no background in programming. This repo aims to pave the way
+                        for those who have only a very basic knowledge of programming in Python and would like to employ
+                        Machine Learning (ML) models in their scientific career.
+                    </p>
+                    <a href="https://github.com/mustafa-sarshar/Usefull-Classes-for-DataAnalysis" target="_blank"
+                        rel="noopener noreferrer">See the
+                        project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Easy Statistics</h2>
+                    <p>
+                        Statistics are the key elements of any scientific research as well as data analysis tasks. A
+                        deep understanding of Statistics requires many years of learning and efforts. However, thank to
+                        Python libraries such as <a href="https://numpy.org/" target="_blank"
+                            rel="noopener noreferrer">NumPy</a>, <a href="https://scipy.org/" target="_blank"
+                            rel="noopener noreferrer">SciPy</a>, <a href="https://www.statsmodels.org/stable/index.html"
+                            target="_blank" rel="noopener noreferrer">StatsModels</a>, <a
+                            href="https://pingouin-stats.org/" target="_blank" rel="noopener noreferrer">Pingouin</a>
+                        and etc., this field has become such a fun and joy for many researchers globally. This Repo aims
+                        to enable non-mathematician researchers to be as good as their counterparts without the need of
+                        learning statistical equations specifically.
+                    </p>
+                    <a href="https://github.com/mustafa-sarshar/Easy-Statistics" target="_blank"
+                        rel="noopener noreferrer">See the project on
+                        GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Python GUIs</h2>
+                    <p>
+                        Perhaps Graphical User Interface (GUI) is the most helpful part of any application, making is
+                        easier to understand and execute different tasks by visually showing the process and the
+                        results. Fortunately, Python has one cool library, <a
+                            href="https://docs.python.org/3/library/tkinter.html" target="_blank"
+                            rel="noopener noreferrer">Tkinter "Tk interface"</a> for designing and creating GUIs. There
+                        are also several other external fantastic libraries that allow the programmer design
+                        cross-platform Python-Applications such as <a href="https://kivy.org/#home" target="_blank"
+                            rel="noopener noreferrer">Kivy</a>, <a
+                            href="https://www.riverbankcomputing.com/software/pyqt/" target="_blank"
+                            rel="noopener noreferrer">PyQt</a> and etc..
+                    </p>
+                    <a href="https://github.com/mustafa-sarshar/Python-GUIs" target="_blank"
+                        rel="noopener noreferrer">See the project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>SQL Fundamentals</h2>
+                    <p>
+                        When we talk about designing applications for desktop, mobile or web, we simply talk about
+                        retrieving data and save it somewhere for later analyses. One of the key elements to save data
+                        is to use a data management system that can protect our data and safely perform several complex
+                        data manipulations on
+                        it.
+                    <blockquote>
+                        "The Structured Query Language (SQL) is a domain-specific language used in programming
+                        and designed for managing data held in a relational database
+                        management system (RDBMS), or for stream processing in a relational data stream management
+                        system (RDSMS). It is
+                        particularly useful in handling structured data, i.e. data incorporating relations among
+                        entities and variables."
+                        <cite>
+                            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank"
+                                rel="noopener noreferrer">wikipedia.org</a>
+                        </cite>
+                    </blockquote>
+                    <p>
+                        This Repo aims to teach
+                        the very important fundamentals of SQL using <a href="https://www.postgresql.org/"
+                            target="_blank" rel="noopener noreferrer">Postgres</a>, one of the most popular RDBMSs
+                        worldwide.
+                    </p>
+                    <a href="https://github.com/mustafa-sarshar/SQL-Fundamentals" target="_blank"
+                        rel="noopener noreferrer">See the project on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <!-- All Icons retrieved from https://www.iconfinder.com -->
+            <a href="https://twitter.com/Musti__4" target="_blank">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU2LjY5MyA1Ni42OTMiIGhlaWdodD0iNTYuNjkzcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1Ni42OTMgNTYuNjkzIiB3aWR0aD0iNTYuNjkzcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik01Mi44MzcsMTUuMDY1Yy0xLjgxMSwwLjgwNS0zLjc2LDEuMzQ4LTUuODA1LDEuNTkxYzIuMDg4LTEuMjUsMy42ODktMy4yMyw0LjQ0NC01LjU5MmMtMS45NTMsMS4xNTktNC4xMTUsMi02LjQxOCwyLjQ1NCAgYy0xLjg0My0xLjk2NC00LjQ3LTMuMTkyLTcuMzc3LTMuMTkyYy01LjU4MSwwLTEwLjEwNiw0LjUyNS0xMC4xMDYsMTAuMTA3YzAsMC43OTEsMC4wODksMS41NjIsMC4yNjIsMi4zMDMgIGMtOC40LTAuNDIyLTE1Ljg0OC00LjQ0NS0yMC44MzMtMTAuNTZjLTAuODcsMS40OTItMS4zNjgsMy4yMjgtMS4zNjgsNS4wODJjMCwzLjUwNiwxLjc4NCw2LjYsNC40OTYsOC40MTIgIGMtMS42NTYtMC4wNTMtMy4yMTUtMC41MDgtNC41NzgtMS4yNjVjLTAuMDAxLDAuMDQyLTAuMDAxLDAuMDg1LTAuMDAxLDAuMTI4YzAsNC44OTYsMy40ODQsOC45OCw4LjEwOCw5LjkxICBjLTAuODQ4LDAuMjMtMS43NDEsMC4zNTQtMi42NjMsMC4zNTRjLTAuNjUyLDAtMS4yODUtMC4wNjMtMS45MDItMC4xODJjMS4yODcsNC4wMTUsNS4wMTksNi45MzgsOS40NDEsNy4wMTkgIGMtMy40NTksMi43MTEtNy44MTYsNC4zMjctMTIuNTUyLDQuMzI3Yy0wLjgxNSwwLTEuNjItMC4wNDgtMi40MTEtMC4xNDJjNC40NzQsMi44NjksOS43ODYsNC41NDEsMTUuNDkzLDQuNTQxICBjMTguNTkxLDAsMjguNzU2LTE1LjQsMjguNzU2LTI4Ljc1NmMwLTAuNDM4LTAuMDA5LTAuODc1LTAuMDI4LTEuMzA5QzQ5Ljc2OSwxOC44NzMsNTEuNDgzLDE3LjA5Miw1Mi44MzcsMTUuMDY1eiIvPjwvc3ZnPg=="
+                    alt="Twitter" width="30" height="30" title="Twitter">
+            </a>
+            <a href="https://github.com/mustafa-sarshar" target="_blank">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDI1IDI1IiB3aWR0aD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuNzQ4MSAyNC45NDcxQzI0LjA5MDEgMjQuNzA2MSAyNC45MTExIDIyLjk1MDEgMjQuOTExMSAxMi45ODExQzI0LjkxMTEgMS45ODEwOCAyMy45MTExIDAuOTgxMDc5IDEyLjkxMTEgMC45ODEwNzlDMS45MTExMyAwLjk4MTA3OSAwLjkxMTEzMyAxLjk4MTA4IDAuOTExMTMzIDEyLjk4MTFDMC45MTExMzMgMjIuOTc2MSAxLjczNzEzIDI0LjcxNTEgMTAuMTM5MSAyNC45NDkxQzEwLjIxMjEgMjQuODU4MSAxMC4yMzkxIDI0Ljc0NDEgMTAuMjM5MSAyNC42MjgxQzEwLjIzOTEgMjQuMzc4MSAxMC4yMjkxIDIxLjgxMjEgMTAuMjI0MSAyMC45MjkxQzcuMTg3MTMgMjEuNTY4MSA2LjU0NjEzIDE5LjUxMDEgNi41NDYxMyAxOS41MTAxQzYuMDQ5MTMgMTguMjg4MSA1LjMzMzEzIDE3Ljk2MjEgNS4zMzMxMyAxNy45NjIxQzQuMzQyMTMgMTcuMzA2MSA1LjQwODEzIDE3LjMxOTEgNS40MDgxMyAxNy4zMTkxQzYuNTA0MTMgMTcuMzk0MSA3LjA4MTEzIDE4LjQxMDEgNy4wODExMyAxOC40MTAxQzguMDU1MTMgMjAuMDI3MSA5LjYzNzEzIDE5LjU2MDEgMTAuMjU5MSAxOS4yODkxQzEwLjM1ODEgMTguNjA2MSAxMC42NDAxIDE4LjEzOTEgMTAuOTUyMSAxNy44NzUxQzguNTI3MTMgMTcuNjA4MSA1Ljk3ODEzIDE2LjcwMDEgNS45NzgxMyAxMi42NDUxQzUuOTc4MTMgMTEuNDkwMSA2LjQwNDEzIDEwLjU0NjEgNy4xMDIxMyA5LjgwNjA4QzYuOTg5MTMgOS41MzgwOCA2LjYxNTEzIDguNDYyMDggNy4yMDkxMyA3LjAwNjA4QzcuMjA5MTMgNy4wMDYwOCA4LjEyNjEzIDYuNzIxMDggMTAuMjEyMSA4LjA5MDA4QzExLjA4MzEgNy44NTUwOCAxMi4wMTcxIDcuNzM4MDggMTIuOTQ2MSA3LjczNDA4QzEzLjg3MzEgNy43MzgwOCAxNC44MDcxIDcuODU1MDggMTUuNjgwMSA4LjA5MDA4QzE3Ljc2NTEgNi43MjEwOCAxOC42ODAxIDcuMDA2MDggMTguNjgwMSA3LjAwNjA4QzE5LjI3NjEgOC40NjIwOCAxOC45MDExIDkuNTM4MDggMTguNzg4MSA5LjgwNjA4QzE5LjQ4ODEgMTAuNTQ2MSAxOS45MTExIDExLjQ5MDEgMTkuOTExMSAxMi42NDUxQzE5LjkxMTEgMTYuNzEwMSAxNy4zNTgxIDE3LjYwNTEgMTQuOTI1MSAxNy44NjYxQzE1LjMxNzEgMTguMTkzMSAxNS42NjYxIDE4LjgzOTEgMTUuNjY2MSAxOS44MjYxQzE1LjY2NjEgMjAuNzcyMSAxNS42NjAxIDIyLjQ0NTEgMTUuNjU2MSAyMy41NTQxQzE1LjY1NDEgMjQuMTAzMSAxNS42NTMxIDI0LjUxMzEgMTUuNjUzMSAyNC42MjgxQzE1LjY1MzEgMjQuNzM3MSAxNS42ODIxIDI0Ljg1MjEgMTUuNzQ4MSAyNC45NDcxVjI0Ljk0NzFaIiBmaWxsPSJibGFjayIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"
+                    alt="GitHub" width="30" height="30" title="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-sarshar-38a363195/" target="_blank">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDU2LjY5MyA1Ni42OTMiIGhlaWdodD0iNTYuNjkzcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1Ni42OTMgNTYuNjkzIiB3aWR0aD0iNTYuNjkzcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxwYXRoIGQ9Ik0zMC4wNzEsMjcuMTAxdi0wLjA3N2MtMC4wMTYsMC4wMjYtMC4wMzMsMC4wNTItMC4wNSwwLjA3N0gzMC4wNzF6Ii8+PHBhdGggZD0iTTQ5LjI2NSw0LjY2N0g3LjE0NWMtMi4wMTYsMC0zLjY1MSwxLjU5Ni0zLjY1MSwzLjU2M3Y0Mi42MTNjMCwxLjk2NiwxLjYzNSwzLjU2MiwzLjY1MSwzLjU2Mmg0Mi4xMiAgIGMyLjAxOSwwLDMuNjU0LTEuNTk3LDMuNjU0LTMuNTYyVjguMjNDNTIuOTE5LDYuMjYyLDUxLjI4Myw0LjY2Nyw0OS4yNjUsNC42Njd6IE0xOC40NzUsNDYuMzA0aC03LjQ2NVYyMy44NDVoNy40NjVWNDYuMzA0eiAgICBNMTQuNzQzLDIwLjc3N2gtMC4wNWMtMi41MDQsMC00LjEyNC0xLjcyNS00LjEyNC0zLjg4YzAtMi4yMDMsMS42Ny0zLjg4LDQuMjIzLTMuODhjMi41NTQsMCw0LjEyNSwxLjY3Nyw0LjE3NSwzLjg4ICAgQzE4Ljk2NywxOS4wNTIsMTcuMzQ1LDIwLjc3NywxNC43NDMsMjAuNzc3eiBNNDUuMzk0LDQ2LjMwNGgtNy40NjVWMzQuMjg2YzAtMy4wMTgtMS4wOC01LjA3OC0zLjc4MS01LjA3OCAgIGMtMi4wNjIsMC0zLjI5LDEuMzg5LTMuODMxLDIuNzMxYy0wLjE5NywwLjQ3OS0wLjI0NSwxLjE0OS0wLjI0NSwxLjgyMXYxMi41NDNoLTcuNDY1YzAsMCwwLjA5OC0yMC4zNTQsMC0yMi40NTloNy40NjV2My4xNzkgICBjMC45OTItMS41MywyLjc2Ni0zLjcwOSw2LjcyOS0zLjcwOWM0LjkxMSwwLDguNTk0LDMuMjExLDguNTk0LDEwLjExVjQ2LjMwNHoiLz48L2c+PC9zdmc+"
+                    alt="LinkedIn" width="30" height="30" title="LinkedIn">
+            </a>
+            <a href="https://www.researchgate.net/profile/Mustafa-Sarshar-2" target="_blank">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDQ0OCA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMzJ2NDQ4aDQ0OFYzMkgwem0yNjIuMiAzMzQuNGMtNi42IDMtMzMuMiA2LTUwLTE0LjItOS4yLTEwLjYtMjUuMy0zMy4zLTQyLjItNjMuNi04LjkgMC0xNC43IDAtMjEuNC0uNnY0Ni40YzAgMjMuNSA2IDIxLjIgMjUuOCAyMy45djguMWMtNi45LS4zLTIzLjEtLjgtMzUuNi0uOC0xMy4xIDAtMjYuMS42LTMzLjYuOHYtOC4xYzE1LjUtMi45IDIyLTEuMyAyMi0yMy45VjIyNWMwLTIyLjYtNi40LTIxLTIyLTIzLjlWMTkzYzI1LjggMSA1My4xLS42IDcwLjktLjYgMzEuNyAwIDU1LjkgMTQuNCA1NS45IDQ1LjYgMCAyMS4xLTE2LjcgNDIuMi0zOS4yIDQ3LjUgMTMuNiAyNC4yIDMwIDQ1LjYgNDIuMiA1OC45IDcuMiA3LjggMTcuMiAxNC43IDI3LjIgMTQuN3Y3LjN6bTIyLjktMTM1Yy0yMy4zIDAtMzIuMi0xNS43LTMyLjItMzIuMlYxNjdjMC0xMi4yIDguOC0zMC40IDM0LTMwLjRzMzAuNCAxNy45IDMwLjQgMTcuOWwtMTAuNyA3LjJzLTUuNS0xMi41LTE5LjctMTIuNWMtNy45IDAtMTkuNyA3LjMtMTkuNyAxOS43djI2LjhjMCAxMy40IDYuNiAyMy4zIDE3LjkgMjMuMyAxNC4xIDAgMjEuNS0xMC45IDIxLjUtMjYuOGgtMTcuOXYtMTAuN2gzMC40YzAgMjAuNSA0LjcgNDkuOS0zNCA0OS45em0tMTE2LjUgNDQuN2MtOS40IDAtMTMuNi0uMy0yMC0uOHYtNjkuN2M2LjQtLjYgMTUtLjYgMjIuNS0uNiAyMy4zIDAgMzcuMiAxMi4yIDM3LjIgMzQuNSAwIDIxLjktMTUgMzYuNi0zOS43IDM2LjZ6Ii8+PC9zdmc+"
+                    alt="ResearchGate" width="30" height="30" title="ResearchGate">
+            </a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
