@@ -1,7 +1,7 @@
+const pokemonContainerEl = document.querySelector(".pokemon-container");
 let pokemonWebAddress = "https://pokedex.org/"  // Example (ID=1): https://pokedex.org/#/pokemon/1
 
-let lstPokemon = [];
-lstPokemon.push(
+let lstPokemon = [
     {
         pokemonID: 1,
         pokemonName: "Bulbasaur",
@@ -9,9 +9,7 @@ lstPokemon.push(
         pokemonWeight: 6.9,
         pokemonTypes: ["Grass", "Poison"],
         pokemonAbilities: ["Chlorophyll", "Overgrow"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 10,
         pokemonName: "Caterpie",
@@ -19,9 +17,7 @@ lstPokemon.push(
         pokemonWeight: 2.9,
         pokemonTypes: ["Bug"],
         pokemonAbilities: ["Shield-dust", "Run-away"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 19,
         pokemonName: "Rattata",
@@ -29,9 +25,7 @@ lstPokemon.push(
         pokemonWeight: 3.5,
         pokemonTypes: ["Normal"],
         pokemonAbilities: ["Run-away", "Hustle", "Guts"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 28,
         pokemonName: "Sandslash",
@@ -39,9 +33,7 @@ lstPokemon.push(
         pokemonWeight: 29.5,
         pokemonTypes: ["Ground"],
         pokemonAbilities: ["Sand-veil", "Sand-rush"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 37,
         pokemonName: "Vulpix",
@@ -49,9 +41,7 @@ lstPokemon.push(
         pokemonWeight: 9.9,
         pokemonTypes: ["Fire"],
         pokemonAbilities: ["Flash-fire", "Drought"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 46,
         pokemonName: "Paras",
@@ -59,9 +49,7 @@ lstPokemon.push(
         pokemonWeight: 5.4,
         pokemonTypes: ["Grass", "Bug"],
         pokemonAbilities: ["Damp", "Effect-spore", "Dry-skin"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 55,
         pokemonName: "Golduck",
@@ -69,9 +57,7 @@ lstPokemon.push(
         pokemonWeight: 76.6,
         pokemonTypes: ["Water"],
         pokemonAbilities: ["Damp", "Cloud-nine", "Swift-swim"]
-    }
-)
-lstPokemon.push(
+    },
     {
         pokemonID: 64,
         pokemonName: "Kadabra",
@@ -80,8 +66,9 @@ lstPokemon.push(
         pokemonTypes: ["Psychic"],
         pokemonAbilities: ["Damp", "Cloud-nine", "Swift-swim"]
     }
-)
+];
 
+/*
 function printPokemon(inputListPokemon) {
     inputListPokemon.forEach(pokemon => {
         document.write(
@@ -89,8 +76,60 @@ function printPokemon(inputListPokemon) {
         );
     });
 }
+*/
+
+function printPokemonUsingForLoop(inputListPokemon) {
+    
+    for (let i = 0; i < inputListPokemon.length; i++) {
+        let pokemonSizeFeedback = "";
+        if (inputListPokemon[i].pokemonHeight > 1.5) {
+            pokemonSizeFeedback = "Wow! That's BIG";
+        }
+        
+        pokemonContainerEl.innerHTML += `
+            <div class="pokemon-item">
+                <div class="pokemon-item__title">
+                    ${inputListPokemon[i].pokemonName}
+                </div>
+                <div class="pokemon-item__info">
+                    <i>Height:</i> <b>${inputListPokemon[i].pokemonHeight}</b> m<br>
+                    <i>Weight:</i> <b>${inputListPokemon[i].pokemonWeight}</b> kg<br>
+                    <i>Types:</i> <b>${inputListPokemon[i].pokemonTypes}</b><br>
+                    <i>Abilities:</i> <b>${inputListPokemon[i].pokemonAbilities}</b><br>
+                </div>
+                <div class="pokemon-item__size-feedback">
+                    ${pokemonSizeFeedback}
+                </div>
+                <div class="pokemon-item__link">
+                    <a href="https://pokedex.org/#/pokemon/${inputListPokemon[i].pokemonID}" target="_blank" rel="noopener noreferrer" class="pokemon-item__link-items">more info</a>
+                </div>
+            </div>
+        `;  
+        
+        /*
+        document.write(                     // via write method
+            `<div class="pokemon-item">
+                <div class="pokemon-item__title">${inputListPokemon[i].pokemonName}</div>
+                <div class="pokemon-item__info">
+                    <i>Height:</i> <b>${inputListPokemon[i].pokemonHeight}</b> m<br>
+                    <i>Weight:</i> <b>${inputListPokemon[i].pokemonWeight}</b> kg<br>
+                    <i>Types:</i> <b>${inputListPokemon[i].pokemonTypes}</b><br>
+                    <i>Abilities:</i> <b>${inputListPokemon[i].pokemonAbilities}</b><br>
+                </div>
+                <div class="pokemon-item__size-feedback">
+                    ${pokemonSizeFeedback}
+                </div>
+                <div class="pokemon-item__link">
+                    <a href="https://pokedex.org/#/pokemon/${inputListPokemon[i].pokemonID}" target="_blank" rel="noopener noreferrer" class="pokemon-item__link-items">more info</a>
+                </div>
+            </div>`
+        );
+        */
+    }
+}
 
 document.onload(
-    printPokemon(lstPokemon)
+    // printPokemon(lstPokemon)
+    printPokemonUsingForLoop(lstPokemon)
 )
     
