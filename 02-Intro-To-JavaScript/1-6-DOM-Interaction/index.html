@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM Interaction</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <input type="text" placeholder="name" data-target="name">
+            <input type="number" placeholder="age" data-target="age">            
+            <p>
+                <strong>Change the values above and click <i>outside</i> the input fields to see the update below.</strong>
+            </p>            
+            <div>
+                Your name is:
+                <span class="user__name"></span>
+            </div>
+            <div>
+                Your age is:
+                <span class="user__age"></span>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="container-paragraph">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita fugit rem non doloremque aliquid omnis labore molestiae veniam voluptatem soluta numquam eveniet, eius aperiam doloribus ea ex! Atque, eius totam.
+            </p>
+        </div>
+        <div class="container-paragraph">
+            <p></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

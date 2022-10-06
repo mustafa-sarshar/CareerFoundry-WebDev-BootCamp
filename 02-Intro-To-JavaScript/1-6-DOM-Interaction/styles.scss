@@ -1,0 +1,45 @@
+$color-container-bg: lightgray;
+
+$size-background-width--initial: 100vw;
+$size-background-height--initial: 100vh;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: $size-background-width--initial;
+    height: $size-background-height--initial;
+    background-color: $color-container-bg;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &-paragraph {
+        height: 100px;
+        width: 80%;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    &-form {
+        border: 1px solid;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+    }
+}
