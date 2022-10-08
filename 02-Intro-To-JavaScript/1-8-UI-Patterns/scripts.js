@@ -5,6 +5,7 @@
     const emailInputEl = document.querySelector("#email");
     const passInputEl = document.querySelector("#pass");
     const modalContainerEl = document.querySelector(".container-modal");
+    // const dialogPromiseReject;
 
     emailInputEl.addEventListener("input", validateEmail);
     passInputEl.addEventListener("input", validatePass);
@@ -103,15 +104,61 @@
 
     function hideModal() {
         modalContainerEl.classList.remove("is-visible");
+
+        if (dialogPromiseReject) {
+            dialogPromiseReject();
+            dialogPromiseReject = null;
+        }
+    }
+
+    function showDialog(title, message) {
+        showModal(title, message);
+
+        const confirmCancelWrapperEl = document.createElement("div");
+        confirmCancelWrapperEl.classList.add("modal__confirm-cancel-wrapper");
+
+        const confirmBtnEl = document.createElement("button");
+        confirmBtnEl.classList.add("modal__confirm-button");
+        confirmBtnEl.innerText = "Confirm";
+
+        const cancelBtnEl = document.createElement("button");
+        cancelBtnEl.classList.add("modal__cancel-button");
+        cancelBtnEl.innerText = "Cancel";
+
+        const modalEl = document.querySelector(".modal");
+
+        confirmCancelWrapperEl.appendChild(confirmBtnEl);
+        confirmCancelWrapperEl.appendChild(cancelBtnEl);
+        modalEl.appendChild(confirmCancelWrapperEl);
+
+        modalContainerEl.appendChild(modalEl);
+
+        confirmBtnEl.focus();
+
+        return new Promise((resolve, reject) => {
+            cancelBtnEl.addEventListener("click", hideModal);
+            confirmBtnEl.addEventListener("click", () => {
+                dialogPromiseReject = null; // Reset this
+                hideModal();
+                resolve();
+            });
+
+            // This can be used to reject from other functions
+            dialogPromiseReject = reject;
+        });
     }
 
     formEl.addEventListener("submit", (e) => {
         e.preventDefault();
         if (validateForm()) {
             console.log("Successful");
-            showModal("Submit Successful", `Logged in by ${emailInputEl.value}`);
+            showModal("Submission Successful", `Logged in by ${emailInputEl.value}`);
         } else {
-            console.log("Unsuccessful");
+            showDialog("Submission was not successful", "Please try again.").then(() => {
+                alert("Let's try again!");
+            }, () => {
+                alert("Hahahah, you're kidding me!");
+            });
         }
     });
 })();

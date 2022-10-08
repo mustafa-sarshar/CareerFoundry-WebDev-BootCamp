@@ -1,5 +1,7 @@
 $size-max-width: 700px;
 
+$media-breakpoint-1: 420px;
+
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +74,31 @@ main {
         color: #777;
         text-decoration: underline;
         cursor: pointer;
+
+        @media all and (max-width:$media-breakpoint-1) {            
+            width: 100%;
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__confirm-cancel-wrapper {
+        margin: 2rem auto;
+        width: fit-content;
+        border: 1px solid;
+
+        @media all and (max-width:$media-breakpoint-1) {
+            width: 100%;
+        }
+    }
+    &__confirm-button, &__cancel-button {
+        padding: 5px 10px;
+        width: 10rem;
+        margin: 0 auto;
+
+        @media all and (max-width:$media-breakpoint-1) {
+            width: 100%;
+        }
     }
 }
 
