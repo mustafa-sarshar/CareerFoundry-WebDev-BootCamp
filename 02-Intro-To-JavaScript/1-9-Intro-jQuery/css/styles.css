@@ -1,0 +1,44 @@
+hr {
+    margin: 20px auto;
+}
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background-color: darkred;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mini-box {
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.bright-red {
+    background-color: red;
+}
+
+.div-async__buttons button {
+    float: left;
+    margin: 10px 5px;
+}
+
+#div-async__results-text {
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid;
+    overflow: scroll;
+}
