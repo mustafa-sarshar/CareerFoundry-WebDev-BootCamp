@@ -16,4 +16,8 @@ footer .row div {
   background-color: lightyellow;
   border: 1px solid orange;
   height: 50px;
+}
+
+.list-group {
+  border-radius: 0;
 }/*# sourceMappingURL=styles.css.map */
