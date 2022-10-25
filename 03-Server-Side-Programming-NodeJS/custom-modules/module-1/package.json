@@ -1,0 +1,11 @@
+{
+  "name": "welcome_user",
+  "version": "1.0.0",
+  "description": "This package includes some functions that facilitates the welcoming of the new users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "musto",
+  "license": "ISC"
+}
